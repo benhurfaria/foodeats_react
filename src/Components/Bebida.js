@@ -72,7 +72,7 @@ export default function Bebida(){
     return (
         <div class="bebida comum">
             {
-                objetosBebida.map((objeto) => <BebidaEscolha image = {objeto.image} nomebebida = {objeto.nomecomida} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+                objetosBebida.map((objeto) => <BebidaEscolha image = {objeto.image} nomebebida = {objeto.nomebebida} descricao = {objeto.descricao} valor = {objeto.valor}/>)
             }
 
         </div>

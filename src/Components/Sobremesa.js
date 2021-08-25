@@ -1,86 +1,61 @@
+import SobremesaEscolha from "./Especificos/SobremesaEscolha";
+
+let objetosSobremesa= [
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Pudim",
+        descricao: "Delicioso",
+        valor: "5,99"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Panetone",
+        descricao: "Delicioso",
+        valor: "5,93"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Passas",
+        descricao: "Delicioso",
+        valor: "5,70"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Bolo de pote",
+        descricao: "Delicioso",
+        valor: "7,70"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Toddynho",
+        descricao: "Delicioso",
+        valor: "4,40"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Brownie",
+        descricao: "Delicioso",
+        valor: "4,20"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Brigadeiro",
+        descricao: "Delicioso",
+        valor: "2,99"
+    },
+    {
+        image: "imagens/pudim.jpeg",
+        nomesobremesa: "Bolo",
+        descricao: "Delicioso",
+        valor: "1,50"
+    },
+];
 export default function Sobremesa(){
     return (
         <div class="sobremesa comum">
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Pudim</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,99</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Panetone</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,93</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Passas</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,70</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Bolo de pote</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">7,70</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Toddynho</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">4,40</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Pudim vencido</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">3,20</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Bolo</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">1,50</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Brownie</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">4,20</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-sobremesa" onclick="selecionarItemSobremesa(this)">
-                <img src="imagens/pudim.jpg" class="fmtImagem" />
-                <h1 class="fmtH1">Brigadeiro</h1>
-                <h2 class="fmtH2">Delicioso</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">2,99</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
+            {
+                objetosSobremesa.map((objeto) => <SobremesaEscolha image = {objeto.image} nomesobremesa = {objeto.nomesobremesa} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+            }
         </div>
     );
 }
