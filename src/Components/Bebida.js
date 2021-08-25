@@ -1,104 +1,79 @@
+import BebidaEscolha from "./Especificos/BebidaEscolha";
+let objetosBebida = [
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "4,99"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca ks",
+        descricao: "Coca 350ml",
+        valor: "4,94"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca cuela",
+        descricao: "Coca 350ml",
+        valor: "5,00"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca zero",
+        descricao: "Coca 350ml",
+        valor: "3,00"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "5,00"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "3,84"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "5,15"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "2,39"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "9,90"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "4,71"
+    },
+    {
+        image: "imagens/cocacola.jpeg",
+        nomebebida: "Coca gelada",
+        descricao: "Coca 350ml",
+        valor: "3,75"
+    },
+
+];
 export default function Bebida(){
     return (
         <div class="bebida comum">
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">4,99</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca ks</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">4,94</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca cuela</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,00</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca zero</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">3,00</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,00</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,00</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,00</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">3,84</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">5,15</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">2,39</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
-
-            <div class="escolhido-bebida" onclick="selecionarItemBebida(this)">
-                <img src="imagens/cocacola.png" class="fmtImagem" />
-                <h1 class="fmtH1">Coca gelada</h1>
-                <h2 class="fmtH2">Coca 350ml</h2>
-                <h3 class="fmtH3">R$ </h3>
-                <h4 class="fmtH4">9,90</h4>
-                <ion-icon name="checkmark-circle-sharp" class="escondido"></ion-icon>
-            </div>
+            {
+                objetosBebida.map((objeto) => <BebidaEscolha image = {objeto.image} nomebebida = {objeto.nomecomida} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+            }
 
         </div>
     );
