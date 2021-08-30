@@ -68,11 +68,18 @@ let objetosBebida = [
     },
 
 ];
-export default function Bebida(){
+export default function Bebida(props){
+    const{
+        setCategoriaBebida,
+        categoriaBebida,
+        verificaQuantidade,
+        normalizaLeiaute
+    } = props
+
     return (
         <div class="bebida comum">
             {
-                objetosBebida.map((objeto) => <BebidaEscolha image = {objeto.image} nomebebida = {objeto.nomebebida} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+                objetosBebida.map((objeto) => <BebidaEscolha normalizaLeiaute={normalizaLeiaute} image = {objeto.image} nomebebida = {objeto.nomebebida} descricao = {objeto.descricao} valor = {objeto.valor} categoria={categoriaBebida} setCategoria={setCategoriaBebida} verificaQuantidade={verificaQuantidade}/>)
             }
 
         </div>

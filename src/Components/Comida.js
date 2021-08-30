@@ -57,11 +57,17 @@ let objetosComida = [
     }
 ];
 
-export default function Comida(){
+export default function Comida(props){
+    const{
+        categoriaComida,
+        setCategoriaComida,
+        verificaQuantidade,
+        normalizaLeiaute
+    } = props
     return (
         <div class="comida comum">
             {
-                objetosComida.map((objeto) => <ComidaEscolha imagem = {objeto.imagem} nomecomida = {objeto.nomecomida} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+                objetosComida.map((objeto) => <ComidaEscolha normalizaLeiaute={normalizaLeiaute} imagem = {objeto.imagem} nomecomida = {objeto.nomecomida} descricao = {objeto.descricao} valor = {objeto.valor} categoria={categoriaComida} setCategoria={setCategoriaComida} verificaQuantidade={verificaQuantidade}/>)
             }
         </div>
     );

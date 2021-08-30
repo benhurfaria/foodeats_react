@@ -50,11 +50,18 @@ let objetosSobremesa= [
         valor: "1,50"
     },
 ];
-export default function Sobremesa(){
+export default function Sobremesa(props){
+    const{
+        setCategoriaSobremesa,
+        categoriaSobremesa,
+        verificaQuantidade,
+        normalizaLeiaute
+    } = props
+    
     return (
         <div class="sobremesa comum">
             {
-                objetosSobremesa.map((objeto) => <SobremesaEscolha image = {objeto.image} nomesobremesa = {objeto.nomesobremesa} descricao = {objeto.descricao} valor = {objeto.valor}/>)
+                objetosSobremesa.map((objeto, index) => <SobremesaEscolha normalizaLeiaute={normalizaLeiaute} image = {objeto.image} nomesobremesa = {objeto.nomesobremesa} descricao = {objeto.descricao} valor = {objeto.valor} setCategoria={setCategoriaSobremesa} categoria={categoriaSobremesa} verificaQuantidade={verificaQuantidade}/>)
             }
         </div>
     );
