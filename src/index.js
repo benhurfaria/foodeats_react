@@ -16,7 +16,9 @@ function App(){
     const [categoriaBebida, setCategoriaBebida] = React.useState(0);
     const [concluir, setConcluir] = React.useState("");
     const [fechar, setFechar] = React.useState("Selecione os 3 itens para fechar o pedido");
-    
+    let [pedidoBebida, setPedidoBebida] = React.useState([]);
+    let [pedidoComida, setPedidoComida] = React.useState([]);
+    let [pedidoSobremesa, setPedidoSobremesa] = React.useState([]);
     
     
     function verificaQuantidadeCategorias(category){
